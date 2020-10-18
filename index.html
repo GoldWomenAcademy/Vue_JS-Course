@@ -11,6 +11,7 @@
       <p>{{ txt }}</p>
       <p>{{ presentation() }}</p>
       <a v-bind:href="URLVueJS">Vue.js Website</a>
+      <img v-bind:src="URLImg">
    </div>
    
 
@@ -23,7 +24,8 @@
         el: '#my-app', 
         data: {
            txt: 'Hello World',
-           URLVueJS : 'https://vuejs.org/v2/guide/installation.html'
+           URLVueJS : 'https://vuejs.org/v2/guide/installation.html',
+           URLImg : 'https://images.unsplash.com/photo-1588103640845-286c25c49a41?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80,'
         },
         methods: {
            presentation: function(){
